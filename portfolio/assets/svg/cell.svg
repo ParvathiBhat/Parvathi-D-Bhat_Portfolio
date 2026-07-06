@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 500 500">
+
+<style>
+
+.cell-shadow{
+filter:drop-shadow(0px 18px 30px rgba(0,0,0,.08));
+}
+
+.membrane{
+fill:#A3D977;
+stroke:#74B941;
+stroke-width:4;
+}
+
+.cytoplasm{
+fill:#B8E88F;
+}
+
+.nucleus{
+fill:#224C7C;
+animation:pulse 5s ease-in-out infinite;
+transform-origin:center;
+}
+
+.nucleolus{
+fill:#89D4FF;
+}
+
+.mito{
+fill:#F6A03D;
+stroke:#D97706;
+stroke-width:2;
+}
+
+.golgi{
+fill:none;
+stroke:#48B04F;
+stroke-width:5;
+stroke-linecap:round;
+}
+
+.er{
+fill:none;
+stroke:#3B82F6;
+stroke-width:3;
+stroke-linecap:round;
+}
+
+.vesicle{
+fill:#E8F7C9;
+stroke:#8BC34A;
+stroke-width:1;
+}
+
+.ribosome{
+fill:#5C6BC0;
+}
+
+@keyframes pulse{
+
+0%,100%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.04);
+}
+
+}
+
+@keyframes drift{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-4px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.mito{
+animation:drift 4s ease-in-out infinite;
+}
+
+.vesicle{
+animation:drift 6s ease-in-out infinite;
+}
+
+</style>
+
+<g class="cell-shadow">
+
+<ellipse
+cx="250"
+cy="250"
+rx="180"
+ry="135"
+class="membrane"/>
+
+<ellipse
+cx="250"
+cy="250"
+rx="160"
+ry="118"
+class="cytoplasm"/>
+
+<!-- Nucleus -->
+
+<circle
+cx="250"
+cy="250"
+r="52"
+class="nucleus"/>
+
+<circle
+cx="250"
+cy="250"
+r="16"
+class="nucleolus"/>
+
+<!-- Mitochondria -->
+
+<ellipse
+cx="150"
+cy="180"
+rx="26"
+ry="14"
+class="mito"/>
+
+<path
+d="M138 180
+Q150 170 162 180
+Q150 190 138 180"
+fill="none"
+stroke="#C25D00"
+stroke-width="2"/>
+
+<ellipse
+cx="340"
+cy="165"
+rx="24"
+ry="13"
+class="mito"/>
+
+<path
+d="M328 165
+Q340 155 352 165
+Q340 175 328 165"
+fill="none"
+stroke="#C25D00"
+stroke-width="2"/>
+
+<ellipse
+cx="165"
+cy="315"
+rx="26"
+ry="14"
+class="mito"/>
+
+<path
+d="M153 315
+Q165 305 177 315
+Q165 325 153 315"
+fill="none"
+stroke="#C25D00"
+stroke-width="2"/>
+
+<!-- Golgi -->
+
+<path d="M310 300 Q345 295 360 285" class="golgi"/>
+<path d="M305 312 Q345 308 366 296" class="golgi"/>
+<path d="M302 325 Q344 322 365 310" class="golgi"/>
+<path d="M305 338 Q344 336 360 324" class="golgi"/>
+
+<!-- Endoplasmic Reticulum -->
+
+<path
+d="M170 245
+Q150 225 170 205
+Q195 195 220 220
+Q235 240 210 255
+Q190 270 170 245"
+class="er"/>
+
+<path
+d="M280 215
+Q305 195 330 210
+Q348 225 338 248
+Q322 265 298 255"
+class="er"/>
+
+<!-- Vesicles -->
+
+<circle cx="325" cy="345" r="8" class="vesicle"/>
+<circle cx="355" cy="335" r="6" class="vesicle"/>
+<circle cx="340" cy="360" r="5" class="vesicle"/>
+
+<!-- Ribosomes -->
+
+<circle cx="205" cy="165" r="3" class="ribosome"/>
+<circle cx="225" cy="185" r="3" class="ribosome"/>
+<circle cx="195" cy="285" r="3" class="ribosome"/>
+<circle cx="300" cy="195" r="3" class="ribosome"/>
+<circle cx="285" cy="330" r="3" class="ribosome"/>
+<circle cx="215" cy="335" r="3" class="ribosome"/>
+<circle cx="150" cy="245" r="3" class="ribosome"/>
+<circle cx="350" cy="245" r="3" class="ribosome"/>
+
+</g>
+
+</svg>
+
+.cell-svg{
+
+position:absolute;
+
+width:340px;
+
+left:130px;
+
+top:50px;
+
+z-index:3;
+
+}

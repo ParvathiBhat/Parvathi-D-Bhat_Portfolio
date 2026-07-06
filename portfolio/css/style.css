@@ -1,5 +1,6 @@
 @import url("navbar.css");
 @import url("hero.css");
+@import url("illustration.css");
 
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
@@ -101,5 +102,128 @@ nav a:hover {
     background:#0F766E;
 
     color:white;
+
+}
+
+.particles{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+}
+
+.particles span{
+
+position:absolute;
+
+width:8px;
+
+height:8px;
+
+background:#14B8A6;
+
+border-radius:50%;
+
+opacity:.45;
+
+animation:floatParticle 7s infinite ease-in-out;
+
+}
+
+.particles span:nth-child(1){
+
+left:15%;
+
+top:20%;
+
+}
+
+.particles span:nth-child(2){
+
+right:18%;
+
+top:25%;
+
+}
+
+.particles span:nth-child(3){
+
+left:22%;
+
+bottom:18%;
+
+}
+
+.particles span:nth-child(4){
+
+right:10%;
+
+bottom:28%;
+
+}
+
+.particles span:nth-child(5){
+
+left:45%;
+
+top:5%;
+
+}
+
+.particles span:nth-child(6){
+
+right:45%;
+
+bottom:5%;
+
+}
+
+@keyframes floatParticle{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+}
+
+@keyframes floatCell{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+}
+@keyframes floatLaptop{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
 
 }

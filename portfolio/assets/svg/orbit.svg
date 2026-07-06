@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 600 600">
+
+<style>
+
+.orbit{
+fill:none;
+stroke:#14B8A6;
+stroke-width:3;
+stroke-linecap:round;
+opacity:.55;
+}
+
+.node{
+fill:#14B8A6;
+animation:pulse 3s ease-in-out infinite;
+}
+
+.node2{
+fill:#2563EB;
+animation:pulse 4s ease-in-out infinite;
+}
+
+@keyframes rotate{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+@keyframes pulse{
+
+0%,100%{
+r:7;
+}
+
+50%{
+r:10;
+}
+
+}
+
+.spin{
+
+animation:rotate 30s linear infinite;
+
+transform-origin:300px 300px;
+
+}
+
+.spin2{
+
+animation:rotate 42s linear infinite reverse;
+
+transform-origin:300px 300px;
+
+}
+
+</style>
+
+<g class="spin">
+
+<ellipse
+cx="300"
+cy="300"
+rx="220"
+ry="110"
+class="orbit"/>
+
+<circle cx="80" cy="300" r="7" class="node"/>
+
+<circle cx="520" cy="300" r="7" class="node"/>
+
+</g>
+
+<g class="spin2">
+
+<ellipse
+cx="300"
+cy="300"
+rx="220"
+ry="110"
+transform="rotate(60 300 300)"
+class="orbit"/>
+
+<circle cx="300" cy="90" r="7" class="node2"/>
+
+<circle cx="300" cy="510" r="7" class="node2"/>
+
+</g>
+
+</svg>
+.orbit-svg{
+
+width:580px;
+
+left:40px;
+
+top:20px;
+
+opacity:.35;
+
+}
