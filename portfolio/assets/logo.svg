@@ -1,0 +1,148 @@
+<svg width="500" height="500" viewBox="0 0 500 500"
+xmlns="http://www.w3.org/2000/svg">
+
+<style>
+
+.orbit{
+fill:none;
+stroke-width:4;
+stroke-linecap:round;
+}
+
+.orbit1{
+stroke:#14B8A6;
+animation:rotate1 18s linear infinite;
+transform-origin:250px 250px;
+}
+
+.orbit2{
+stroke:#0F766E;
+animation:rotate2 24s linear infinite;
+transform-origin:250px 250px;
+}
+
+.node{
+fill:#14B8A6;
+animation:pulse 3s ease-in-out infinite;
+}
+
+.cell{
+fill:#8BC34A;
+}
+
+.globe{
+fill:#123A64;
+}
+
+.continent{
+fill:#8BC34A;
+}
+
+@keyframes rotate1{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+@keyframes rotate2{
+from{transform:rotate(360deg);}
+to{transform:rotate(0deg);}
+}
+
+@keyframes pulse{
+
+0%,100%{
+r:7;
+}
+
+50%{
+r:10;
+}
+
+}
+
+</style>
+
+<!-- Orbit 1 -->
+
+<g class="orbit1">
+
+<ellipse
+cx="250"
+cy="250"
+rx="150"
+ry="70"
+class="orbit"/>
+
+<circle cx="100" cy="250" r="7" class="node"/>
+
+<circle cx="400" cy="250" r="7" class="node"/>
+
+</g>
+
+<!-- Orbit 2 -->
+
+<g class="orbit2">
+
+<ellipse
+cx="250"
+cy="250"
+rx="150"
+ry="70"
+transform="rotate(60 250 250)"
+class="orbit"/>
+
+<circle cx="250" cy="95" r="7" class="node"/>
+
+<circle cx="250" cy="405" r="7" class="node"/>
+
+</g>
+
+<!-- Cell -->
+
+<ellipse
+cx="250"
+cy="250"
+rx="95"
+ry="65"
+class="cell"/>
+
+<!-- Earth -->
+
+<circle
+cx="250"
+cy="250"
+r="45"
+class="globe"/>
+
+<!-- Continents -->
+
+<path
+class="continent"
+d="
+M230 225
+L220 235
+L225 245
+L240 240
+L245 225
+Z"/>
+
+<path
+class="continent"
+d="
+M255 235
+L275 245
+L270 260
+L255 258
+L248 245
+Z"/>
+
+<path
+class="continent"
+d="
+M240 265
+L255 275
+L250 288
+L235 282
+Z"/>
+
+</svg>
