@@ -217,16 +217,4 @@ class="er"/>
 
 </svg>
 
-.cell-svg{
 
-position:absolute;
-
-width:340px;
-
-left:130px;
-
-top:50px;
-
-z-index:3;
-
-}

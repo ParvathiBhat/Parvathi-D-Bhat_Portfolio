@@ -201,16 +201,3 @@ fill="#94A3B8"/>
 
 </svg>
 
-.laptop-svg{
-
-position:absolute;
-
-width:250px;
-
-left:290px;
-
-top:270px;
-
-z-index:5;
-
-}

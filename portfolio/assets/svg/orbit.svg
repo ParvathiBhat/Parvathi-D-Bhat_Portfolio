@@ -95,14 +95,3 @@ class="orbit"/>
 </g>
 
 </svg>
-.orbit-svg{
-
-width:580px;
-
-left:40px;
-
-top:20px;
-
-opacity:.35;
-
-}
