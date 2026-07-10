@@ -1,0 +1,209 @@
+.experience{
+
+    padding:70px 8% 100px;
+    background:#F8FAFC;
+
+}
+
+.timeline{
+
+    position:relative;
+    width:900px;
+    margin:80px auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#14B8A6;
+
+}
+
+.timeline-item{
+
+    position:relative;
+    padding-left:80px;
+    margin-bottom:70px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+    left:12px;
+    top:18px;
+
+    width:28px;
+    height:28px;
+
+    background:#14B8A6;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 0 0 4px rgba(20,184,166,.15);
+
+}
+
+.timeline-card{
+
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.timeline-card:hover{
+
+    transform:translateX(10px);
+
+}
+
+.timeline-date{
+
+    display:inline-block;
+    padding:6px 14px;
+
+    background:#DFF7F5;
+    color:#0F766E;
+
+    border-radius:30px;
+
+    font-weight:600;
+    margin-bottom:18px;
+
+}
+
+.timeline-card h3{
+
+    font-size:28px;
+    margin-bottom:8px;
+    color:#1E293B;
+
+}
+
+.timeline-card h4{
+
+    color:#64748B;
+    margin-bottom:18px;
+
+}
+
+.timeline-card p{
+
+    line-height:1.8;
+    color:#475569;
+
+}
+
+.experience{
+
+    padding:120px 8%;
+    background:#F8FAFC;
+
+}
+
+.timeline{
+
+    position:relative;
+    width:900px;
+    margin:80px auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#14B8A6;
+
+}
+
+.timeline-item{
+
+    position:relative;
+    padding-left:80px;
+    margin-bottom:70px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+    left:12px;
+    top:18px;
+
+    width:28px;
+    height:28px;
+
+    background:#14B8A6;
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 0 0 4px rgba(20,184,166,.15);
+
+}
+
+.timeline-card{
+
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.timeline-card:hover{
+
+    transform:translateX(10px);
+
+}
+
+.timeline-date{
+
+    display:inline-block;
+    padding:6px 14px;
+
+    background:#DFF7F5;
+    color:#0F766E;
+
+    border-radius:30px;
+
+    font-weight:600;
+    margin-bottom:18px;
+
+}
+
+.timeline-card h3{
+
+    font-size:28px;
+    margin-bottom:8px;
+    color:#1E293B;
+
+}
+
+.timeline-card h4{
+
+    color:#64748B;
+    margin-bottom:18px;
+
+}
+
+.timeline-card p{
+
+    line-height:1.8;
+    color:#475569;
+
+}

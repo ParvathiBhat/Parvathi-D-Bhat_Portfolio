@@ -1,6 +1,6 @@
 .hero{
 
-    min-height:85vh;
+    min-height:70vh;
 
     display:flex;
 
@@ -8,9 +8,9 @@
 
     align-items:center;
 
-    padding:80px;
+    padding:50px 80px;
 
-    gap:60px;
+    gap:30px;
 
 }
 
@@ -106,8 +106,8 @@
 }
 .hero-graphics{
 position:relative;
-width:650px;
-height:550px;
+width:600px;
+height:480px;
 margin:auto;
 }
 
@@ -140,6 +140,8 @@ z-index:5;
 }
 
 .orbit-svg{
+
+position:absolute;
 
 width:580px;
 
