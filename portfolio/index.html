@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/research.css">
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/skills.css">
 
 </head>
 
@@ -20,11 +21,68 @@
 
     <!-- ================= NAVBAR ================= -->
 
-    <nav>
+    
+<nav class="navbar">
 
-        <!-- Your navbar code goes here -->
+    <button id="menu-btn">
 
-    </nav>
+        <img src="assets/menu.svg" alt="Menu">
+
+    </button>
+
+    <div class="nav-icons">
+
+        <a href="https://www.linkedin.com/in/parvathi-d-bhat-29b88222a" target="_blank">
+
+            <img src="assets/linkedin.svg" alt="LinkedIn">
+
+        </a>
+
+        <a href="https://github.com/ParvathiBhat?tab=repositories" target="_blank">
+
+            <img src="assets/github.svg" alt="GitHub">
+
+        </a>
+
+        <a href="assets/resume.pdf" target="_blank">
+
+            <img src="assets/resume.svg" alt="Resume">
+
+        </a>
+
+    </div>
+
+</nav>
+
+<div id="sidebar" class="sidebar">
+
+    <button id="close-btn">✕</button>
+
+    <h2>Parvathi D Bhat</h2>
+
+    <p>From Cells to Code</p>
+
+    <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#research">Research</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#experience">Experience</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</div>
+
+<div id="overlay" class="overlay"></div>
 
     <!-- ================= MAIN ================= -->
 
@@ -172,6 +230,8 @@
     <script src="js/hero.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/experience.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/navbar.js"></script>
 
 </body>
 
@@ -281,11 +341,11 @@
 
 </section>
 
-<section class="projects">
+<section id="projects" class="projects">
 
     <div class="section-title">
 
-        <h2>Featured Projects</h2>
+        <h2>Projects</h2>
 
         <div class="section-line"></div>
 
@@ -550,6 +610,91 @@
                     Worked on computational biology, bioinformatics,
                     mathematical modeling and translational biotechnology projects.
                 </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="skills" class="skills">
+
+    <div class="section-title">
+
+        <h2>Technical Skills</h2>
+
+        <div class="section-line"></div>
+
+        <p class="section-subtitle">
+
+            A blend of laboratory techniques, computational biology,
+            programming and analytical tools.
+
+        </p>
+
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <h3>🧬 Wet Lab</h3>
+
+            <div class="skill-tags">
+
+                <span>PCR</span>
+                <span>DNA Extraction</span>
+                <span>Gel Electrophoresis</span>
+                <span>Cell Culture</span>
+                <span>Microscopy</span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>💻 Programming</h3>
+
+            <div class="skill-tags">
+
+                <span>Python</span>
+                <span>MATLAB</span>
+                <span>R</span>
+                <span>Java</span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>🧪 Bioinformatics</h3>
+
+            <div class="skill-tags">
+
+                <span>BLAST</span>
+                <span>Galaxy</span>
+                <span>NCBI</span>
+                <span>KEGG</span>
+                <span>Reactome</span>
+
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h3>📊 Data Analysis</h3>
+
+            <div class="skill-tags">
+
+                <span>Machine Learning</span>
+                <span>Mathematical Modeling</span>
+                <span>Statistics</span>
+                <span>Data Visualization</span>
 
             </div>
 
